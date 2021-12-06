@@ -1,0 +1,67 @@
+// 这个是main的css样式表
+$color-1: #006AB7;
+$color-2:#C0E0F2;
+$news-text:#4E83A9;
+$color-write :#fff;
+// 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1492px;
+    margin: auto;
+    .main-Container {
+        // position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        background: $color-write;
+        .main-title-Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            .main-title-Block {
+                width: 63px;
+                height: 7px;
+                left: 0px;
+                top: 29.5px;
+                background-color: $color-2;
+            }
+            .main-Title {
+                font-weight: 700;
+                font-size: 2.5em;
+                color: $color-1;
+                margin: 0 22px;
+            }
+        }
+        .main-Subtitle {
+            font-size: 32px;
+            color: $news-text;
+            margin-top: 4px;
+        }
+        .main-content-Container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 100%;
+            margin-top: 53px;
+            .main-content-Block {
+                position: relative;
+                width: 1011px;
+                height: 643px;
+                left: -400px;
+                background-color: $color-2;
+                align-self: flex-end;
+                z-index: 1;
+            }
+            .main-content-Img-1 {
+                z-index: 2;
+            }
+        }
+    }
+}

@@ -6,26 +6,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
 </head>
 
 <body>
     <nav>
-        <div class="nav-Container">
-            <div class="logo-Container">
-                <a href="index.html" class="logo" style="display: flex;">
-                    <img src="img/logo.png" alt="logo">
-                </a>
-                <div class="logo-title-Container">
-                    <p class="logo-Title-1">医疗健康与仿生计算实验室 </p>
-                    <p class="logo-Title-2">Medical Health and Intelligent Simulation Laboratory</p>
+        <div class="dingbu">
+            <!-- 小nav p m -->
+            <div class="nav-Container">
+                <!-- 左logo框 -->
+                <div class="logo-Container">
+                    <!-- logo -->
+                    <a href="index.html" class="logo" style="display: flex;">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                    <!-- logo区-大标题 -->
+                    <div class="logo-title-Container">
+                        <p class="logo-Title-1">医疗健康与仿生计算实验室 </p>
+                        <p class="logo-Title-2">Medical Health and Intelligent Simulation Laboratory</p>
+                    </div>
+                </div>
+                <!-- 右搜索框 -->
+                <div class="search-Container">
+                    <form action="" method="get">
+                        <input type="text" name='search' class="search-Input">
+                        <input type='submit' name="submit" class='search-Icon' value="&nbsp;">
+                    </form>
+                    <div class="search-Line"> </div>
+                    <a href="#">
+                        <div class="search-En">EN</div>
+                    </a>
+                    <a href="#">
+                        <div class="search-Login">登录/注册</div>
+                    </a>
+                </div>
+                <!-- 下导航栏 -->
+                <div class="daohang-Container">
+                    <a href="#">
+                        <p class="daohang-Text">首页</p>
+                    </a>
+                    <a href="#">
+                        <p class="daohang-Text">实验室概况</p>
+                    </a>
+                    <a href="#">
+                        <p class="daohang-Text">新闻动态</p>
+                    </a>
+                    <a href="#">
+                        <p class="daohang-Text">学习资源</p>
+                    </a>
+                    <a href="#">
+                        <p class="daohang-Text">合作交流</p>
+                    </a>
+                    <a href="#">
+                        <p class="daohang-Text">联系我们</p>
+                    </a>
                 </div>
             </div>
-        </div>
-        <div class="Banner"><img src="img/banner_1.png" alt="banner-1" width="100%"></div>
+
     </nav>
-
-
+    <div class="Banner"><img src="img/banner_1.png" alt="banner-1" width="100%"></div>
+    </div>
+    <!-- 此处本应该是连接nav 但是因为nav图片与导航的层叠关系，只能换一种方式：将图片r后上偏移124，隔出一个nav的宽度作为留白分区 -->
+    <main>
+        <div class="main-Container">
+            <div class="main-title-Container">
+                <div class="main-title-Block"> </div>
+                <p class="main-Title">实验室简介</p>
+                <div class="main-title-Block"> </div>
+            </div>
+            <p class="main-Subtitle">Laboratory profile</p>
+            <div class="main-content-Container">
+                <img src="img/main-content-img-1.png" alt="~" class="main-content-Img-1">
+                <span class="main-content-Block"> </span>
+            </div>
+        </div>
+    </main>
 
 </body>
 

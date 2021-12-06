@@ -1,0 +1,122 @@
+// 这个是nav的css样式表
+$color-1: #006AB7;
+$color-write :#fff;
+//
+nav {
+    display: block
+}
+
+.dingbu {
+    display: flex;
+    background-color: rgba($color-1, .7);
+    width: 100%;
+    height: 124px;
+    padding: 10px 47px;
+    .nav-Container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        .logo-Container {
+            position: absolute;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .logo-title-Container {
+                display: flex;
+                flex-direction: column;
+                align-self: flex-end;
+                justify-content: left;
+                margin-left: 20px;
+                .logo-Title-1 {
+                    color: $color-write;
+                    margin-top: 9px;
+                    font-family: Microsoft YaHei;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 28px;
+                    line-height: 37px;
+                }
+                .logo-Title-2 {
+                    color: $color-write;
+                    margin-top: 9px;
+                    font-family: Microsoft YaHei;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+        }
+        .search-Container {
+            position: absolute;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 16px;
+            .search-Input {
+                padding: 0 0 0 15px;
+                width: 201px;
+                height: 30px;
+                border: none;
+                border-radius: 15px;
+                background-color: rgba($color-write, .35);
+            }
+            .search-Icon {
+                width: 24px;
+                border: none;
+                background: url(img/search.png ) no-repeat right top;
+                // background: url(img/bx-search.svg );
+                cursor: pointer;
+                margin-left: 6px;
+            }
+            .search-Line {
+                width: 22px;
+                height: 0px;
+                border: 1px solid rgba(255, 255, 255, 0.5);
+                transform: rotate(90deg);
+                margin-left: 8px;
+            }
+            .search-En {
+                font-size: 22px;
+                color: $color-write;
+                margin-left: 8px;
+                font-weight: 400;
+                cursor: pointer;
+            }
+            .search-Login {
+                font-size: 16px;
+                color: $color-write;
+                margin-left: 14px;
+                font-weight: 400;
+            }
+        }
+        .daohang-Container {
+            position: absolute;
+            right: 0;
+            display: flex;
+            align-self: flex-end;
+            justify-content: center;
+            align-items: center;
+            margin-right: 94px;
+            .daohang-Text {
+                color: $color-write;
+                margin-left: 40px;
+                font-family: Microsoft YaHei;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+.Banner {
+    position: relative;
+    top: -124px;
+    left: 0;
+    z-index: -999;
+}
