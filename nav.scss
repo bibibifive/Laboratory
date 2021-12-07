@@ -1,14 +1,23 @@
 // 这个是nav的css样式表
-$color-1: #006AB7;
-$color-write :#fff;
-//
-nav {
+$blue: #006AB7;
+$deep-blue:#005EA2;
+$light-blue:#C0E0F2;
+$news-text:#4E83A9;
+$news-text-little:#969696;
+$white :#fff;
+$shadow-color:#636363;
+$light-grey:#F2F2F2;
+$little-yuansu:#408DC4;
+// 
+$jianju-1:0.9%;
+$lan-1:9.1%;
+header {
     display: block
 }
 
-.dingbu {
+nav {
     display: flex;
-    background-color: rgba($color-1, .7);
+    background-color: rgba($blue, .7);
     width: 100%;
     height: 124px;
     padding: 10px 47px;
@@ -26,20 +35,20 @@ nav {
             .logo-title-Container {
                 display: flex;
                 flex-direction: column;
-                align-self: flex-end;
-                justify-content: left;
-                margin-left: 20px;
+                align-self: center;
+                justify-content: center;
+                margin-left: 14px;
                 .logo-Title-1 {
-                    color: $color-write;
+                    color: $white;
                     margin-top: 9px;
                     font-family: Microsoft YaHei;
                     font-style: normal;
                     font-weight: bold;
-                    font-size: 28px;
+                    font-size: 1.4em;
                     line-height: 37px;
                 }
                 .logo-Title-2 {
-                    color: $color-write;
+                    color: $white;
                     margin-top: 9px;
                     font-family: Microsoft YaHei;
                     font-style: normal;
@@ -62,7 +71,7 @@ nav {
                 height: 30px;
                 border: none;
                 border-radius: 15px;
-                background-color: rgba($color-write, .35);
+                background-color: rgba($white, .35);
             }
             .search-Icon {
                 width: 24px;
@@ -81,14 +90,14 @@ nav {
             }
             .search-En {
                 font-size: 22px;
-                color: $color-write;
+                color: $white;
                 margin-left: 8px;
                 font-weight: 400;
                 cursor: pointer;
             }
             .search-Login {
                 font-size: 16px;
-                color: $color-write;
+                color: $white;
                 margin-left: 14px;
                 font-weight: 400;
             }
@@ -102,7 +111,7 @@ nav {
             align-items: center;
             margin-right: 94px;
             .daohang-Text {
-                color: $color-write;
+                color: $white;
                 margin-left: 40px;
                 font-family: Microsoft YaHei;
                 font-style: normal;
