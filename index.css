@@ -203,6 +203,9 @@ main .main-Container .main-content-Container-1 .main-content-Icon-1 {
   right: 0;
   bottom: -20px;
 }
+main .main-Container .main-content-Container-1 .main-content-Icon-1:hover {
+  filter: brightness(300%) saturate(0%);
+}
 main .main-Container .main-content-Container-2 {
   position: relative;
   display: flex;
@@ -212,18 +215,7 @@ main .main-Container .main-content-Container-2 {
   margin-top: 53px;
   margin-bottom: 124px;
 }
-main .main-Container .main-content-Container-2-left {
-  position: relative;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-direction: column;
-  width: 19.1%;
-  height: 534px;
-  margin-right: 0.9%;
-  box-shadow: 5px 5px 18px rgba(99, 99, 99, 0.15);
-}
-main .main-Container .main-content-Date {
+main .main-Container .main-content-Container-2 .main-content-Date {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -234,24 +226,42 @@ main .main-Container .main-content-Date {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 999;
 }
-main .main-Container .main-content-Date p:nth-of-type(1) {
+main .main-Container .main-content-Container-2 .main-content-Date > p:nth-of-type(1) {
   position: relative;
   font-size: 1.1em;
   font-weight: 400;
   color: #fff;
 }
-main .main-Container .main-content-Date p:nth-of-type(2) {
+main .main-Container .main-content-Container-2 .main-content-Date > p:nth-of-type(2) {
   position: relative;
   font-size: 0.8em;
   font-weight: 400;
   color: #fff;
 }
-main .main-Container .main-content-2-Img-1 {
-  width: 100%;
-  margin-bottom: 30px;
+main .main-Container .main-content-Container-2 .main-content-Container-2-left {
+  position: relative;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  flex-direction: column;
+  width: 19.1%;
+  height: 534px;
+  margin-right: 0.9%;
+  box-shadow: 5px 5px 18px rgba(99, 99, 99, 0.15);
 }
-main .main-Container .main-content-Container-2 > a > p:nth-of-type(1) {
+main .main-Container .main-content-Container-2 .main-content-Container-2-left .pic {
+  margin-bottom: 30px;
+  overflow: hidden;
+  width: 100%;
+  height: 289px;
+}
+main .main-Container .main-content-Container-2 .main-content-Container-2-left .main-content-2-Img-1 {
+  width: 100%;
+  transition: all 0.65s ease;
+}
+main .main-Container .main-content-Container-2 .main-content-Container-2-left > p:nth-of-type(1) {
   margin-bottom: 15px;
   width: 80%;
   position: relative;
@@ -261,7 +271,7 @@ main .main-Container .main-content-Container-2 > a > p:nth-of-type(1) {
   color: #4E83A9;
   text-align: justify;
 }
-main .main-Container .main-content-Container-2 > a > p:nth-of-type(2) {
+main .main-Container .main-content-Container-2 .main-content-Container-2-left > p:nth-of-type(2) {
   margin-bottom: 40px;
   width: 81%;
   position: relative;
@@ -271,7 +281,19 @@ main .main-Container .main-content-Container-2 > a > p:nth-of-type(2) {
   color: #969696;
   text-align: justify;
 }
-main .main-Container .main-content-Container-2-right {
+main .main-Container .main-content-Container-2 .main-content-Container-2-left:hover .main-content-2-Img-1 {
+  transform: scale(1.1);
+}
+main .main-Container .main-content-Container-2 .main-content-Container-2-left:hover {
+  background-color: #C0E0F2;
+}
+main .main-Container .main-content-Container-2 .main-content-Container-2-left:hover > p:nth-of-type(1) {
+  color: #005EA2;
+}
+main .main-Container .main-content-Container-2 .main-content-Container-2-left:hover > p:nth-of-type(2) {
+  color: #5E5E5E;
+}
+main .main-Container .main-content-Container-2 .main-content-Container-2-right {
   position: relative;
   display: flex;
   justify-content: flex-start;
@@ -280,33 +302,46 @@ main .main-Container .main-content-Container-2-right {
   width: 39.1%;
   height: 534px;
 }
-main .main-Container .main-content-Container-2-right > a {
+main .main-Container .main-content-Container-2 .main-content-Container-2-right > a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   margin-bottom: 12px;
   background-color: #F2F2F2;
 }
-main .main-Container .main-content-Container-2-right > a:nth-of-type(6) {
+main .main-Container .main-content-Container-2 .main-content-Container-2-right > a::after {
+  content: " ";
+  width: 0px;
+  height: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 106, 183, 0.9);
+  transition: 0.45s ease-out;
+}
+main .main-Container .main-content-Container-2 .main-content-Container-2-right > a:hover::after {
+  width: 100%;
+}
+main .main-Container .main-content-Container-2 .main-content-Container-2-right > a:nth-of-type(6) {
   position: absolute;
   margin-bottom: 0;
   bottom: 0;
   right: 0;
   background: none;
+  color: #fff;
 }
-main .main-Container .main-content-Container-2-right > a > div {
+main .main-Container .main-content-Container-2 .main-content-Container-2-right > a > div {
   width: 90px;
   height: 90px;
   position: relative;
   background-color: rgba(0, 106, 183, 0.9);
 }
-main .main-Container .main-content-Container-2-right > a > p {
+main .main-Container .main-content-Container-2 .main-content-Container-2-right > a > p {
   width: 82%;
   margin: 0 16px;
   line-height: 156%;
   font-size: 0.8em;
   color: #4E83A9;
-  text-decoration: underline;
 }
 main .main-Container .main-content-Container-3 {
   display: flex;
@@ -320,10 +355,16 @@ main .main-Container .main-content-Container-3 {
 }
 main .main-Container .main-content-Container-3 > div {
   width: 29.1%;
+  overflow: hidden;
 }
 main .main-Container .main-content-Container-3 img {
+  width: 100%;
   background-color: #C0E0F2;
   padding: 25px;
+  transition: all 0.4s ease-out;
+}
+main .main-Container .main-content-Container-3 img:hover {
+  transform: translate(0, -12px);
 }
 main .main-Container .main-content-Container-3 > div:nth-of-type(1) {
   align-self: flex-end;
@@ -335,7 +376,7 @@ main .main-Container .main-content-Container-3 > div:nth-of-type(2) {
 main .main-Container .main-content-Container-3 > div:nth-of-type(3) {
   align-self: flex-end;
 }
-main .main-Container .main-content-3-yuan {
+main .main-Container .main-content-Container-3 .main-content-3-yuan {
   position: relative;
   top: 19px;
   margin: 0 auto;
@@ -354,11 +395,17 @@ main .youqing {
 }
 main .youqing a {
   width: 19.1%;
+  height: 131px;
+  overflow: hidden;
   margin-right: 0.9%;
 }
 main .youqing a > img {
   width: 100%;
   padding: 5px;
+  transition: 0.65s ease;
+}
+main .youqing a > img:hover {
+  transform: scale(1.1);
 }
 
 footer {
